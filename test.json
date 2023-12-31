@@ -1,0 +1,26 @@
+{
+    "id": 1,
+    "name": "Complex Object",
+    "tags": [
+        "tag1",
+        "tag2",
+        "tag3"
+    ],
+    "info": {
+        "description": "This is a complex object example.",
+        "author": {
+            "name": "John Doe",
+            "email": "john@example.com"
+        }
+    },
+    "data": [
+        {
+            "timestamp": "2023-08-19T12:00:00",
+            "value": 10
+        },
+        {
+            "timestamp": "2023-08-19T13:00:00",
+            "value": 20
+        }
+    ]
+}
