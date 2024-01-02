@@ -25,9 +25,11 @@ async function handleUserLogin(req, res) {
       error: "Invalid Username or password",
     });
   }
-  const sessionID = uuidv4();
-  setUser(sessionID, user);
-  res.cookie(`${email}_uid`, sessionID);
+  // const sessionID = uuidv4();
+  // setUser(sessionID, user);
+  // res.cookie(`${email}_uid`, sessionID);
+  const token = setUser(user);
+  res.cookie("jwt token", token);
   return res.redirect("/");
   //return res.render("home");
 }
